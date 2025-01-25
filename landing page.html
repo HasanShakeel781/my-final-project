@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OMEGA&reg Swiss Luxury Watches Since 1848</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="icon" href="omega.jpg" type="x-icon">
+            <style>
+              @font-face{
+                font-family: "OMEGA CT";
+                src: url(OmegaCTRegular.ttf);
+              }
+                *{
+    margin: 0;
+    padding: 0;
+}
+.box-main{
+    width: 100%;
+    display: flex;
+}
+.left{
+    width: 44%;
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.right{
+    width: 44%;
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+  }
+.right svg{
+  margin: 0 3px;
+}
+nav{
+   width: 100%;
+   background-color: white;
+   margin-bottom: 1px;
+}
+ul{
+    display: flex;
+    margin-right: 50px;
+    margin-top: 2px;
+}
+.item{
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 12px;
+    padding-bottom: 14px;
+}
+
+.link{
+  font-family: "OMEGA CT", serif;
+    font-weight:500;
+    text-decoration: none;
+   color: rgb(98,98,98);
+    font-size: 13px;
+    letter-spacing: 0.8px;
+}
+.link:hover{
+    color: rgb(197, 16, 48);
+}
+.mylogo{
+display: flex;
+justify-content: center;
+align-items: center;
+height: 50px;
+width: 30%;
+}
+.mylogo img{
+height:57px;
+padding-top: 7px;
+}
+.menu-text{
+    margin-left: 35px;
+    font-weight: 500;
+font-family: "OMEGA CT", serif;
+font-size: 11.5px;
+margin-top: 17px;
+}
+.struct{
+    padding-top: 12px;
+    padding-left: 20px;
+   color: rgb(98,98,98);
+    font-size: 12px;
+}
+.globe{
+    padding-top: 10px;
+    padding-left: 20px;
+}
+.globe svg{
+   color: rgb(98,98,98);
+}
+.globe svg:hover{
+    color: rgb(197, 16, 48);
+    cursor: pointer;
+}
+.box-inn{
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.slider-container {
+            width: 100%;
+            height: 600px;
+            position: relative;
+            overflow: hidden;
+        }
+        .slides-wrapper {
+            display: flex;
+            transition: transform 1s cubic-bezier(0.77, 0, 0.175, 1);
+            width: 300%; /* Assuming 3 slides (100% * number of slides) */
+            height: 100%;
+        }
+
+        .slide {
+            flex: 1;
+            display: flex;
+            width: 100%;
+            height: 100%;
+        }
+
+.bg-image{
+    flex: 2.5;
+    background-size: cover;
+    cursor: pointer;
+    background-position: center;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1), 0 -1px 3px rgba(0, 0, 0, 0.08);
+}
+.side{
+    cursor: pointer;
+    flex: 1;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+     background-color: #f9f9f9;
+     padding-top: 19%;
+     animation: slideIn 1s ease-out both;
+     box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1), 0 -1px 3px rgba(0, 0, 0, 0.08);
+}
+    .side p{
+        font-family: "Futura Lt BT", serif;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        color: #555555;
+        opacity: 0; /* Start invisible */
+    animation: slideIn 0.5s ease forwards; /* Slide-in effect */
+    animation-delay: 0.8s; /* Optional: Add delay for smoother effect */
+    }
+    .side .specs{
+        font-family: "Futura Lt BT", serif;
+        display: flex;justify-content: center;align-items: center;
+        text-decoration: underline;
+        color: #555555;
+        font-weight: 700;
+        font-size: 16px;
+        opacity: 0; /* Start invisible */
+    animation: slideIn 0.5s ease forwards; /* Slide-in effect */
+    animation-delay: 2s; /* Optional: Add delay for smoother effect */
+    }
+    .slide .specs:hover{
+        color: rgb(197, 16, 48); /* Change color on hover */
+    transition: color 0.3s ease;
+    }
+    @keyframes slideIn {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes slideIn {
+            0% {
+                opacity: 0;
+                transform: translateX(-50%);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+.dots {
+            height: 30px;
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+
+        .dot {
+            width: 10px;
+            height: 10px;
+            background-color: rgb(90, 90, 90);
+            border-radius: 50%;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .dot.active {
+            background-color: transparent;
+            transform: scale(1.3);
+            border: 2px solid rgb(197, 16, 48);
+        }
+    .balance{
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .specs:hover{
+        color: rgb(197, 16, 48);
+    }
+    .right .svg{
+       color: rgb(90,90,90);
+        padding-top: 7px;
+        margin-right: 7px;
+    }
+    .right .svg:hover{
+        color: rgb(197, 16, 48);
+        cursor: pointer;
+    }
+    .right .org3{
+       color: rgb(98,98,98);
+        padding-top: 7px;
+        margin-right: 40px;
+    }
+    .right .org3:hover{
+        color: rgb(197, 16, 48);
+        cursor: pointer;
+    }
+    .right .org2{
+       color: rgb(98,98,98);
+        padding-top: 7px;
+        margin-right: 10px;
+    }
+    .right .org2:hover{
+        color: rgb(197, 16, 48);
+        cursor: pointer;
+    } 
+    .burger{
+        display: block;
+        height: auto;
+        position: relative;
+       color: rgb(98,98,98);
+        margin-left: 20px;
+    }
+    .burger:hover{
+        cursor: pointer;
+        color: rgb(197, 16, 48);
+    }
+    .burger:hover .line{
+        cursor: pointer;
+        background-color: rgb(197, 16, 48);
+    }
+    .burger .main{
+        position: absolute;
+        top: 18px;
+        left: 17px;
+    }
+    .burger .line{
+        width: 12px;
+        height: 1px;
+        background-color: rgb(118, 118, 118);
+        margin-top: 3px;
+    }
+    .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.containing{
+    height: 100px;
+    width: 100%;
+}
+button.play-button, 
+button.pause-button {
+    margin-left: 7px;
+    border: none;
+    color:  rgb(90, 90, 90);
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    
+}
+
+button.play-button:hover,
+button.pause-button:hover {
+color: rgb(197, 16, 48);
+}
+.upper{
+        box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.2), 0 -1px 3px rgba(0, 0, 0, 0.4);
+        max-height: 95px;
+    } 
+    /* Parent item */
+/* Ensure the dropdown spans full width and avoids scrollbars */
+.sub {
+  display: none;
+  position: absolute;
+  top: 97%;
+  left: 0px;
+  transform: translateX(-300px);
+  right: 0;
+  margin: 0;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  padding: 20px 0;
+  z-index: 1000;
+  width: 100vw;
+  height: 470px;
+  letter-spacing: 2px;
+}
+.item {
+  position: relative; 
+}
+
+.item:hover .sub,
+.sub:hover {
+  display: block;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+.nav {
+  position: relative;
+  overflow: visible;
+}
+
+.sub h1 {
+   color: rgb(98,98,98);
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+.sub div {
+  display: inline-block;
+  margin: 0 20px;
+  text-align: center;
+ color: rgb(98,98,98);
+}
+.sub div:hover{
+    color: rgb(197, 16, 48);
+}
+.sub img {
+  display: block;
+  margin: 0 auto 10px;
+  margin-top: 30px;
+}
+
+.sub .specialize {
+  display: block;
+  text-align: center;
+  margin-left: 610px;
+  margin-top: 30px;
+  font-size: 12px;
+ color: rgb(98,98,98);
+ letter-spacing: 1.5px;
+ width: 140px;
+ line-height: 18px;
+ border-bottom: 1px solid lightslategray;
+}
+.sub .specialize:hover{
+    color: rgb(197, 16, 48);
+    border-bottom: 1px solid  rgb(197, 16, 48);
+}
+.port p{
+    font-size: 13px;
+}
+/*body {
+            margin: 0;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            position: relative;  Set body as the relative positioning reference 
+        }
+
+       Navigation styles
+        .v-nav-resp {
+            display: flex;
+            list-style: none;
+            background-color: #333;
+            padding: 10px;
+            margin: 0;
+        }
+
+        .v-nav-resp .item {
+            position: relative;
+            margin-right: 20px;
+        }
+
+        .v-nav-resp .link {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            display: block;
+        }
+
+        .v-nav-resp .link:hover {
+            color: coral;
+        }
+
+         Dropdown styles
+        .sub {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: white;
+            width: 100vw;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            margin-left: -200px;
+            border: 1px solid #ddd;
+        }
+
+        .v-nav-resp .item:hover .sub {
+            display: block;
+        }
+
+        .sub h1 {
+            font-family: "French Script MT", cursive;
+            text-align: center;
+            font-size: 40px;
+            padding-top: 5px;
+        }
+
+        .port {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .port img {
+            height: 145px;
+            width: 145px;
+        }
+
+        .port p {
+            margin: 5px 0;
+            font-size: 14px;
+            color: #333;
+        }
+
+        .specialize {
+            display: block;
+            text-align: center;
+            color: coral;
+            text-decoration: none;
+            margin-top: 20px;
+            font-size: 14px;
+            letter-spacing: 2px;
+        }
+
+        .specialize:hover {
+            text-decoration: underline;
+        }*/
+    </style>
+</head>
+<body>
+        <nav class="h-nav-resp upper">
+            <div class="box-main">
+            <div class="left">
+                <div class="burger">
+                    <div class="main">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    </div>
+                    <font face="Bahnschrift"><p class="menu-text">MENU</p></font>
+                    </div>
+                    <p class="struct"> | </p>
+                    <p class="globe"><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="21" d="M256 48C141.13 48 48 141.13 48 256s93.13 208 208 208s208-93.13 208-208S370.87 48 256 48Z"/><path fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="21" d="M256 48c-58.07 0-112.67 93.13-112.67 208S197.93 464 256 464s112.67-93.13 112.67-208S314.07 48 256 48Z"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="21" d="M117.33 117.33c38.24 27.15 86.38 43.34 138.67 43.34s100.43-16.19 138.67-43.34m0 277.34c-38.24-27.15-86.38-43.34-138.67-43.34s-100.43 16.19-138.67 43.34"/><path fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="21" d="M256 48v416m208-208H48"/></svg></p>
+                </div>
+                <span class="mylogo"><a href="landing page.html" class="balance"><img src="logo.png" alt=""></a></span>
+                <div class="right">
+                    <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path fill="currentColor" stroke="currentColor" 
+                      stroke-width="0.0000001" d="M15.25 0a8.25 8.25 0 0 0-6.18 13.72L1 22.88l1.12 1l8.05-9.12A8.251 8.251 0 1 0 15.25.01zm0 15a6.75 6.75 0 1 1 0-13.5a6.75 6.75 0 0 1 0 13.5"/></svg>
+                    <svg class="org2" xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 256 256"><path fill="currentColor" stroke="currentColor" 
+                      stroke-width="0.007" d="M128 64a40 40 0 1 0 40 40a40 40 0 0 0-40-40m0 64a24 24 0 1 1 24-24a24 24 0 0 1-24 24m0-112a88.1 88.1 0 0 0-88 88c0 31.4 14.51 64.68 42 96.25a254.2 254.2 0 0 0 41.45 38.3a8 8 0 0 0 9.18 0a254.2 254.2 0 0 0 41.37-38.3c27.45-31.57 42-64.85 42-96.25a88.1 88.1 0 0 0-88-88m0 206c-16.53-13-72-60.75-72-118a72 72 0 0 1 144 0c0 57.23-55.47 105-72 118"/></svg>
+                    <svg class="org3" xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 1024 1024"><path fill="currentColor" stroke="currentColor" 
+                      stroke-width="0.007" d="M511.728 64c108.672 0 223.92 91.534 223.92 159.854v159.92c0 61.552-25.6 179.312-94.256 233.376a63.99 63.99 0 0 0-23.968 57.809c2.624 22.16 16.592 41.312 36.848 50.625l278.496 132.064c2.176.992 26.688 5.104 26.688 39.344l.032 62.464L64 959.504V894.56c0-25.44 19.088-33.425 26.72-36.945l281.023-132.624c20.16-9.248 34.065-28.32 36.769-50.32c2.72-22-6.16-43.84-23.456-57.712c-66.48-53.376-97.456-170.704-97.456-233.185v-159.92C287.615 157.007 404.016 64 511.728 64m0-64.002c-141.312 0-288.127 117.938-288.127 223.857v159.92c0 69.872 31.888 211.248 121.392 283.088l-281.04 132.64S.001 827.999.001 863.471v96.032c0 35.344 28.64 63.968 63.951 63.968h895.552c35.344 0 63.968-28.624 63.968-63.968v-96.032c0-37.6-63.968-63.968-63.968-63.968L681.008 667.439c88.656-69.776 118.656-206.849 118.656-283.665v-159.92c0-105.92-146.64-223.855-287.936-223.855z"/></svg>
+                </div>
+                </div>
+                <div class="box-inn">
+                <ul class="v-nav-resp">
+                    <li class="item permanent" style="position: relative;">
+                        <a href="#" class="link">CONSTELLATION</a>
+                        <font face="Futura Lt BT"><div class="sub">
+                          <h1 style="font-family: French Script MT; text-align: center; padding-top: 5px;font-size: 40px;">Constellation</h1>
+                          <a href="#"><div class="port" style="padding-left: 500px;padding-top: 30px;">
+                            <img src="omega-constellation-globemaster-co-axial-master-chronometer-annual-calendar-41-mm-13033412210001-679a5f.png" height="145px" width="145px">
+                            <p>GLOBEMASTER</p>
+                          </div></a>
+                          <a href="#"><div class="port" style="padding-top: 30px;">
+                            <img src="omega-constellation-co-axial-master-chronometer-41-mm-13133412104001-fb4d16.png" height="145px" width="145px">
+                            <p>CONSTELLATION</p>
+                          </div></a>
+                          <a class="specialize" href="#" style="text-decoration: none;">ALL CONSTELLATION</a>
+                        </div></font>
+                      </li>
+                      
+                      <li class="item permanent" style="position: relative;">
+                        <a href="#" class="link">SEAMASTER</a>
+                        <font face="Futura Lt BT"><div class="sub " style="left: -150px;">
+                          <h1 style="font-family: French Script MT; text-align: center; padding-top: 5px;font-size: 40px;">Seamaster</h1>
+                          <a href="#"><div class="port" style="padding-left: 210px;padding-top: 30px;">
+                            <img src="omega-seamaster-aqua-terra-shades-co-axial-master-chronometer-38-mm-22010382003003-7246b9.png" height="145px" width="145px">
+                            <p>AQUA TERRA</p>
+                          </div></a>
+                          <a href="#"><div class="port" style="padding-top: 30px;">
+                            <img src="omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21032422001001-bd73d9.png" height="145px" width="145px">
+                            <p>DIVER 300M</p>
+                          </div></a>
+                          <a href="#"><div class="port" style="padding-top: 30px;">
+                            <img src="omega-seamaster-planet-ocean-6000m-co-axial-master-chronometer-45-5-mm-21530462103001-734aa9.png" height="145px" width="145px">
+                            <p>PLANET OCEAN</p>
+                          </div></a>
+                          <a href="#"><div class="port" style="padding-top: 30px;">
+                            <img src="omega-seamaster-300-co-axial-master-chronometer-41-mm-23432412101001-e4e87d.png" height="145px" width="145px">
+                            <p>HERITAGE MODELS</p>
+                          </div></a>
+                          <a href="#"><div class="port" style="padding-top: 30px;">
+                            <img src="omega-seamaster-regatta-chronograph-46-75-mm-21692467910001-dbfc01.png" height="145px" width="145px">
+                            <p>INSTRUMENTS</p>
+                          </div></a>
+                          <a class="specialize" href="#" style="text-decoration: none;letter-spacing: 2px;font-size: 13px;">ALL SEAMASTER</a>
+                        </div></font>
+                      </li>
+                      <li class="item permanent" style="position: relative;">
+                        <a href="#" class="link">SPEEDMASTER</a>
+                        <font face="Futura Lt BT"><div class="sub " style="left: -262px;padding: 5px;">
+                          <h1 style="font-family: French Script MT; text-align: center; padding-top: 5px;font-size: 40px;">Speedmaster</h1>
+                          <a href="#"><div class="port" style="padding-top: 30px;margin: 0 7px;padding-left: 120px;">
+                            <img src="omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31030425001002-198df2.png" height="145px" width="145px">
+                            <p>MOON WATCH</p>
+                          </div></a>
+                          <a href="#"><div class="port" style="padding-top: 30px;margin: 0 7px;">
+                            <img src="omega-speedmaster-first-omega-in-space-co-axial-master-chronometer-chronograph-39-7-mm-31030405006001-ee9450.png" height="145px" width="145px">
+                            <p>HERITAGE MODELS</p>
+                          </div></a>
+                          <a href="#"><div class="port" style="padding-top: 30px;margin: 0 7px;">
+                            <img src="omega-speedmaster-dark-side-of-the-moon-co-axial-master-chronometer-chronograph-44-25_mm-31092445001001-43bb86.png" height="145px" width="145px">
+                            <p>DARK SIDE OF THE MOON</p>
+                          </div></a>
+                          <a href="#"><div class="port" style="padding-top: 30px;margin: 0 7px;">
+                            <img src="omega-speedmaster-38-co-axial-chronometer-chronograph-38-mm-32430385055001-0459d0.png" height="145px" width="145px">
+                            <p>SPEEDMASTER 38</p>
+                          </div></a>
+                          <a href="#"><div class="port" style="padding-top: 30px;margin: 0 7px;">
+                            <img src="omega-speedmaster-chronoscope-co-axial-master-chronometer-chronograph-43_mm-32930435103001-583406.png" height="145px" width="145px">
+                            <p>TWO COUNTERS</p>
+                          </div></a>
+                          <a href="#"><div class="port" style="padding-top: 30px;margin: 0 7px;">
+                            <img src="omega-speedmaster-x-33-marstimer-chronograph-45-mm-31890457901003-381f1e.png" height="145px" width="145px">
+                            <p>INSTRUMENTS</p>
+                          </div></a>
+                          <a class="specialize" href="#" style="text-decoration: none;letter-spacing: 2px;font-size: 13px;">ALL SPEEDMASTER</a>
+                        </div></font>
+                      </li>
+                      <li class="item permanent" style="position: relative;">
+                        <a href="#" class="link">DE VILLE</a>
+                        <font face="Futura Lt BT"><div class="sub " style="left: -405px;">
+                          <h1 style="font-family: French Script MT; text-align: center; padding-top: 5px;font-size: 40px;">De Ville</h1>
+                          <a href="#"><div class="port" style="padding-left: 300px;padding-top: 30px;">
+                            <img src="omega-de-ville-ladymatic-co-axial-chronometer-34-mm-42530342055002-c5a694.png" height="145px" width="145px">
+                            <p>LADYMATIC</p>
+                          </div></a>
+                          <a href="#"><div class="port" style="padding-top: 30px;">
+                            <img src="omega-de-ville-tresor-quartz-36-mm-42817366004001-5b4b69.png" height="145px" width="145px">
+                            <p>TRESOR</p>
+                          </div></a>
+                          <a href="#"><div class="port" style="padding-top: 30px;">
+                            <img src="omega-de-ville-prestige-co-axial-master-chronometer-power-reserve-41-mm-43413412103001-032478.png" height="145px" width="145px">
+                            <p>PRESTIGE</p>
+                          </div></a>
+                          <a href="#"><div class="port" style="padding-top: 30px;">
+                            <img src="omega-de-ville-tourbillon-co-axial-master-chronometer-43-mm-52953432299001-e6750b.png" height="145px" width="145px">
+                            <p>TOURBILLON</p>
+                          </div></a>
+                          <a class="specialize" href="#" style="text-decoration: none;letter-spacing: 2px;font-size: 13px;">ALL DE VILLA
+                          </a>
+                        </div></font>
+                      </li>
+                      <li class="item permanent" style="position: relative;">
+                        <a href="#" class="link" style="font-size: 12.5px;">Accessories</a>
+                        <font face="Futura Lt BT"><div class="sub " style="left: -510px;">
+                          <h1 style="font-family: French Script MT; text-align: center; padding-top: 5px;font-size: 40px;">Accessories</h1>
+                          <a href="#"><div class="port" style="padding-left: 205px;padding-top: 15px;">
+                            <img src="omega-two-piece-seamaster-diver-300m-black-rubber-strap-032CVZ010126_025STZ010129-flagship-faf356.png" height="145px" width="145px">
+                            <p>TWO-PIECE STRAPS</p>
+                          </div></a>
+                          <a href="#"><div class="port" style="padding-top: 15px;">
+                            <img src="omega-nato-polyamide-5-stripe-black-and-grey-strap-031ZSZ002045w-flagship-8d8d06.png" height="145px" width="145px">
+                            <p>NATO STRAPS</p>
+                          </div></a>
+                          <a href="#"><div class="port" style="padding-top: 15px;">
+                            <img src="omega-aqua-sailing-bracelet-B34STA0509004-flagship-0b3db0.png" height="145px" width="145px">
+                            <p>SAILING BRACELETS</p>
+                          </div></a>
+                          <a href="#"><div class="port" style="padding-top: 15px;">
+                            <img src="omega-fine-leather-watch-box-7070310015-flagship-27ce5c.png" height="145px" width="145px">
+                            <p>FINE LEATHER</p>
+                          </div></a>
+                          <a href="#"><div class="port" style="padding-top: 15px;">
+                            <img src="omega-omegamania-cufflinks-C91STA0206105-flagship-051c39.png" height="145px" width="145px">
+                            <p>CUFF LINKS</p>
+                          </div></a>
+                          <a class="specialize" href="#" style="text-decoration: none;letter-spacing: 2px;font-size: 13px;">ALL ACCESSORIES</a>
+                        </div></font>
+                      </li>
+                <li class="item"><a href="#" class="link" style="font-size: 12px;">Find your OMEGA</a></li>
+                </ul>
+                </div>
+        </nav>
+        <div class="slider-container">
+            <div class="slides-wrapper">
+                <!-- Slide 1 -->
+                <div class="slide">
+        <div class="bg-image" style="background-image: url(kv-omega-festiveseason24-1400x1024.avif);"></div>
+        <div class="side">
+            <p style="letter-spacing: 4px;font-size: 18px;">FESTIVE SEASON</p>
+            <p style="font-size: 40px;color: rgb(197, 16, 48);">TALES OF <br>PRECISION</p>
+            <a href="#" class="specs">Discover the collection</a>
+        </div>
+        </div>
+        <div class="slide">
+        <div class="bg-image" style="background-image: url(SP62_310.30.40.50.06.001-large\ \(1\).avif);"></div>
+        <div class="side" style="padding-top: 13%;">
+           <div class="image-container"><img src="SP62_310.30.40.50.06.001_caseback_thumbnail.png" width="300px" height="160px"></div>
+           <div class="text-container"><p style="letter-spacing: 3px;font-size: 16px;margin-top: 10px;">SPEEDMASTER</p>
+            <p style="font-size: 31px;color: rgb(197, 16, 48);">FIRST OMEGA IN SPACE</p>
+            <a href="#" class="specs">Discover the watch</a></div>
+        </div>
+        </div>
+        <div class="slide">
+        <div class="bg-image" style="background-image: url(OME-SE-21030422001010-KeyVisual-2-large.avif);"></div>
+        <div class="side" style="padding-top: 11.5%;">
+            <div class="image-container"><img src="OME-SE-21030422001010-KeyVisual-img-2.png" width="300px" height="160px"></div>
+            <div class="text-container"><p style="letter-spacing: 3px;font-size: 15px;margin-top: 10px;">DIVER 300M</p>
+            <p style="font-size: 29px;color: rgb(197, 16, 48);">PRECISION. POWER.<br>POISE.</p>
+            <a href="#" class="specs">Discover the collection</a></div>
+        </div>
+
+        </div>
+        </div>
+        </div>
+        <div class="dots">
+            <span class="dot active" data-slide="0"></span>
+            <span class="dot" data-slide="1"></span>
+            <span class="dot" data-slide="2"></span>
+            <button class="play-button" style="display: none;">
+                <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M18.4 12.5L9 18.38L8 19V6zm-1.9 0L9 7.8v9.4z"/></svg></span>
+            </button>
+            <button class="pause-button">
+                <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M11 17V7H8v10zm5 0V7h-3v10z"/></svg>
+          </span>
+            </button>
+        </div>
+       <!-- <script>const permanentItem = document.querySelector('.item.permanent');
+            const subMenu = document.querySelector('.item.permanent .sub');
+            
+            // Add hover-like behavior for touch devices
+            permanentItem.addEventListener('click', (e) => {
+              e.preventDefault();
+              subMenu.style.display = subMenu.style.display === 'block' ? 'none' : 'block';
+            });
+            </script>-->
+        <script>
+            const slidesWrapper = document.querySelector('.slides-wrapper');
+const slides = document.querySelectorAll('.slide');
+const dots = document.querySelectorAll('.dot');
+const playButton = document.querySelector('.play-button');
+const pauseButton = document.querySelector('.pause-button');
+
+let currentSlide = 0;
+let sliderInterval; // Store interval for auto-slide
+
+function showSlide(index) {
+    const slideWidth = slides[0].clientWidth;
+    slidesWrapper.style.transform = `translateX(-${index * slideWidth}px)`;
+
+    // Update active dot
+    dots.forEach((dot, i) => {
+        dot.classList.remove('active');
+    });
+    dots[index].classList.add('active');
+}
+
+dots.forEach((dot, index) => {
+    dot.addEventListener('click', () => {
+        currentSlide = index;
+        showSlide(index);
+
+        // If the slider is autoplaying, reset the interval
+        if (sliderInterval) {
+            resetAutoSlide();
+        }
+    });
+});
+
+// Start the auto-slider
+function startSlider() {
+    sliderInterval = setInterval(() => {
+        currentSlide = (currentSlide + 1) % slides.length;
+        showSlide(currentSlide);
+    }, 4000); // 4 seconds interval
+    playButton.style.display = 'none';
+    pauseButton.style.display = 'inline-block';
+}
+
+// Stop the auto-slider
+function stopSlider() {
+    clearInterval(sliderInterval);
+    sliderInterval = null;
+    playButton.style.display = 'inline-block';
+    pauseButton.style.display = 'none';
+}
+
+// Reset auto-slide interval
+function resetAutoSlide() {
+    stopSlider();
+    startSlider();
+}
+
+// Event listeners for play and pause buttons
+playButton.addEventListener('click', startSlider);
+pauseButton.addEventListener('click', stopSlider);
+
+// Initialize auto-slider on page load
+startSlider();
+
+        </script>
+</body>
+</html>
